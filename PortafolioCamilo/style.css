@@ -1,0 +1,364 @@
+:root {
+    --corlor-de-fondo: #05131d;
+    --color-de-link: #F5F5F5;
+    --color-de-menu: #78AFD4;
+    --color-de-header: #444;
+    --color-de-title: #555;
+    --color-de-section-title: #666;
+    --color-de-texto: #555;
+    --color-de-boton: #888;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #8BA8BB;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+    
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Sección Menu */
+
+section.menu {
+    width: 100%;
+    background-color: var(--color-de-menu);
+    padding: 1rem;
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.menu__title {
+    color: #555;
+    font-size: 1.5rem;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.menu__list__item a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Sección Title */
+
+section.title {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.title__profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.title__bio {
+    font-size: 1.25rem;
+    color: var(--color-de-title);
+}
+
+.title__subsection {
+    font-size: 1rem;
+    color: var(--color-de-texto);
+}
+
+.title__network {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.title__network__item img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Sección About */
+
+section.about {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.about__title {
+    font-size: 1.5rem;
+    color: var(--color-de-section-title);
+}
+
+.about__paragraph {
+    font-size: 1rem;
+    color: var(--color-de-texto);
+    margin-top: 0.5rem;
+}
+
+/* Sección Skills */
+
+section.skills {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem 0;
+    text-align: center; 
+}
+
+.skills__title {
+    font-size: 1.5rem;
+    color: var(--color-de-section-title);
+}
+
+.skills__line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.skills__box {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+}
+
+.skills__img img {
+    width: 50px;
+    height: 50px;
+}
+
+.skills__name {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--color-de-texto);
+}
+
+/* Sección Hobbies */
+
+section.hobbies {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.hobbies__title {
+    font-size: 1.5rem;
+    color: var(--color-de-section-title);
+}
+
+.hobbies__line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.hobbies__box {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+}
+
+.hobbies__img img {
+    width: 50px;
+    height: 50px;
+}
+
+.hobbies__name {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--color-de-texto);
+}
+
+/* Sección Formación Académica */
+
+section.academic {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.academic__title {
+    font-size: 1.5rem;
+    color: var(--color-de-section-title);
+}
+
+.academic__courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.academic__courses__box {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.academic__courses__item__img img {
+    width: 50px;
+    height: 50px;
+}
+
+.academic__courses__item__title {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--color-de-texto);
+}
+
+.academic__courses__item__subtitle {
+    font-size: 0.875rem;
+    color: var(--color-de-texto);
+}
+
+/* Sección Experiencia Profesional */
+
+section.experience {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.experience__section__title {
+    font-size: 1.5rem;
+    color: var(--color-de-section-title);
+}
+
+.experiencie__box {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.experience__img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.experience__info {
+    padding: 0 1rem;
+}
+
+.experience__title {
+    font-size: 1.25rem;
+    color: var(--color-de-title);
+}
+
+.experience__text {
+    font-size: 1rem;
+    color: var(--color-de-texto);
+    margin-top: 0.5rem;
+}
+
+.experience__description {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.experiencia__botao--repo,
+.experience__botao--demo {
+    background-color: var(--color-de-boton);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Sección de Contacto */
+
+section.formcontato {
+    width: 110%;
+    max-width: 800px;
+    margin: 2rem 0;
+}
+
+.formcontato__img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.formcontato__title {
+    font-size: 1.5rem;
+    color: var(--color-de-section-title);
+}
+
+.formcontato__subtext {
+    font-size: 1rem;
+    color: var(--color-de-texto);
+    margin-top: 0.5rem;
+}
+
+.formcontato__form {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 2rem;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
